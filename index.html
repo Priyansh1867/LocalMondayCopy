@@ -1,18 +1,79 @@
 <html>
     <head>
         <title>
-            1st Page for Push
+            1st page for Push
         </title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About us</a></li>
+            <li><a href="#Contact">Conatct Us</a></li>
+            <li><a href="#Jecrc">JECRC FOUNDATION</a></li>
+            
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <td>S.NO</td>
+                    <td>first</td>
+                    <td>Operation</td>
+                    <td>second</td>
+                    <td>final output</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td id="first"></td>
+                    <td>+</td>
+                    <td id="second"></td>
+                    <td id="output"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td id="first1"></td>
+                    <td>/</td>
+                    <td id="second1"></td>
+                    <td id="output1"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td id="first2"></td>
+                    <td>-</td>
+                    <td id="second2"></td>
+                    <td id="output2"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td id="first3"></td>
+                    <td>*</td>
+                    <td id="second3"></td>
+                    <td id="output3"></td>
+                </tr>
+            </tbody>
+        </table>
         <script>
-            let a = parseInt(prompt("Enter the value of a : "));
-            let b = parseInt(prompt("Enter the value of b : "));
-
-            let c = a + b;
-            document.write("The sum is : " + c);
+            
+            let a=parseInt(prompt("Enter a value of a : "));
+            let b=parseInt(prompt("Enter a value of b : "));
+            let c=a+b;
+            // document.write("The sum is : "+c);
+            document.getElementById("first").textContent=a;
+            document.getElementById("second").textContent=b;
+            document.getElementById("output").textContent="Sum : "+(a+b);
+            document.getElementById("first1").textContent=a;
+            document.getElementById("second1").textContent=b;
+            document.getElementById("output1").textContent="Division : "+(a/b);
+            document.getElementById("first2").textContent=a;
+            document.getElementById("second2").textContent=b;
+            document.getElementById("output2").textContent="Subtract : "+(a-b);
+            document.getElementById("first3").textContent=a;
+            document.getElementById("second3").textContent=b;
+            document.getElementById("output3").textContent="Multiply : "+(a*b);
+        
         </script>
     </body>
 </html>
